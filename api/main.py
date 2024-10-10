@@ -1,8 +1,6 @@
 from fastapi import FastAPI
 
 app = FastAPI()
-
 @app.get("/")
-async def welcome():
-    return "welcome to my api"
-
+async def teste_function():
+    return {"msg" : "api ok"}
